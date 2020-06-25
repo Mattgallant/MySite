@@ -1,0 +1,285 @@
+$mainbackground: #222629;
+$secondbackground: #474B4F;
+$lightbackground: #6B6E70;
+$darkaccent: #61892F;
+$lightaccent: #86C232;
+
+
+body{
+	background-color: $secondbackground;
+	color: white;
+	padding-bottom: 80px;
+}
+
+
+/* Responsive front page */
+.home{
+	background-color: $lightbackground;
+	color: white;
+}
+
+@media(min-width: 1600.1px){ /* VERY LARGE desktops */
+	#home-pic{
+		border: 28px solid $secondbackground;
+		width: 650px;
+		margin-right: -100px
+	}
+	.intro-text{
+		font-size: 32px;
+		margin-left: -100px
+	}
+	.intro-heading{
+		margin-left: -100px;
+		font-size: 84px;
+	}
+	.footer{
+		color: white;
+		background-color: $mainbackground;
+		border-top: 2px solid $darkaccent;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		line-height: 10px;
+		font-size: 20px
+	}
+	#myname{
+		font-size: 72px;
+		margin-right: 10px
+	}
+	.navbar{
+		font-size: 26px;
+	}
+}
+
+@media(min-width:992px) and (max-width: 1600px){  /* Large home pic, desktops */
+	#home-pic{
+		border: 28px solid $secondbackground;
+		width: 420px;
+	}
+	.intro-text{
+		font-size:22px;
+	}
+	.intro-heading{
+		font-size: 64px;
+	}
+	.footer{
+		color: white;
+		background-color: $mainbackground;
+		border-top: 2px solid $darkaccent;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		line-height: 10px;
+	}
+	#myname{
+		font-size:52px;
+		margin-right: 8px;
+	}
+	.navbar{
+		font-size: 16.5px;
+	}
+}
+
+@media (max-width: 991.98px) and (min-width:770px){ /* Medium home pic, phones/tablets. 770px - 992px */
+	#home-pic{
+		border: 16px solid $secondbackground;
+		width: 320px;
+		margin-top: 35px
+	}
+	.intro-text{
+		font-size:18px;
+	}
+	.intro-heading{
+		font-size: 50px;
+	}
+	.footer{
+		color: white;
+		background-color: $mainbackground;
+		border-top: 2px solid $darkaccent;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		line-height: 10px;
+		font-size: 15px
+	}
+	#myname{
+		font-size:48px;
+		margin-right: 50px;
+	}
+	.navbar{
+		font-size: 15.5px;
+	}
+}
+
+@media(max-width: 769.99px) and (min-width: 0px) { /* Small, smartphone sizeish */
+	#home-pic{
+		border: 16px solid $secondbackground;
+		width: 420px;
+		margin-top: 10px
+	}
+	.intro-text{
+		font-size:22px;
+	}
+		.intro-heading{
+		font-size: 64px;
+	}
+	.footer{
+		color: white;
+		background-color: $mainbackground;
+		border-top: 2px solid $darkaccent;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		line-height: 10px;
+		font-size: 12px;
+	}
+	#myname{
+		font-size:50px;
+	}
+	.navbar{
+		font-size: 25px;
+		text-align: center
+	}
+}
+
+
+/* Navbar styling */
+.navbar {
+	background-color: $mainbackground;
+	color: white;
+	border-bottom: 5px solid $darkaccent;
+}
+
+.navbar-nav > li { /* Spacing between navbar items */
+	padding-left: 8px;
+}
+
+.navbar-brand, .nav-link { /* Navitem white color */
+	color: white;
+}
+
+.nav-link:hover{
+	color: $lightaccent;
+}
+
+.active { /* Active pill on navitems */
+    background-color: $darkaccent;
+    border-radius: 25px;
+}
+
+#myname {
+	font-weight: bold;
+}
+
+#mypic {
+	width: 225px;
+	border: 5px solid $darkaccent;
+}
+
+/* --------------- */
+
+.exercise-border{
+	border: 1px solid;
+  	border-color: $lightaccent;
+}
+
+.under-border-primary{
+	border-bottom: 2.5px solid;
+	border-color: $lightaccent;
+}
+
+.under-border-secondary{
+	border-bottom: 1.5px solid;
+	border-color: $lightaccent;
+}
+
+.btn-accent{
+	background-color: $lightaccent;
+}
+
+.lightaccent {
+	color: $lightaccent;
+}
+
+.darkaccent{
+	color: $darkaccent;
+}
+
+
+
+/* This stuff is all for the Skills & Projects page, skills.html */
+.skills-background{
+	background-color: $lightbackground;
+	border-radius: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.skills-font{
+	font-size: 20px;
+	color: white;
+}
+
+.fa-circle{
+	font-size: 20px;
+}
+
+.filled-circle{
+	color: $lightaccent;
+}
+
+#adb-pic{
+  	border-radius: 10px;
+  	border: 2px solid $darkaccent;
+}
+
+.projects-background{
+	background-color: $lightbackground;
+	border-radius: 10px;
+	font-size: 18px;
+	color: white;
+}
+
+.other-projects{
+	line-height: 1.5;  /* Example of SCSS nesting */
+	li{
+		margin-top:10px;
+	}
+}
+
+.class-layer{
+	background-color: $mainbackground;
+	border-radius: 10px
+}
+
+.about-pic{
+	border-radius: 10px;
+	border: 3px solid $darkaccent;
+}
+
+
+
+/* Exercise page styling */
+.exercise-table{
+	font-size: 20px;
+	background-color: $lightbackground
+}
+
+
+/* Example of SCSS inhertiance, ended up not using this in production */
+%background{
+	color: white;
+	background-color: $mainbackground;
+	font-size:20;
+}
+
+.pic-background{
+	@extend %background;
+	border: 1px solid red;
+}
