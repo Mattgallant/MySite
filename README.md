@@ -1,5 +1,5 @@
-# Project 0
-CS50: Web Programming with Python and JavaScript. Please see requirements for this project [here](https://docs.cs50.net/web/2020/x/projects/0/project0.html).
+# My Personal Website: www.matt-gallant.com
+Made in part for CS50: Web Programming with Python and JavaScript. Please see requirements for this project [here](https://docs.cs50.net/web/2020/x/projects/0/project0.html).
 
 The website I built for Project 0 is a personal profile website. I have included information about myself, both personal and academic, relevant skills and projects, and left room for future expansion with the "Exercise Stats" page. This site serves as a draft of a site I would want to show future employers to demonstrate my skills and portfolio. I plan to make it better suited to different screen sizes in the future and make the overlook better once I get more comfortable with CSS and Bootstrap. I have used HTML, CSS, SASS and Bootstrap in this current version of the site.
 
